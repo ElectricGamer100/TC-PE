@@ -16,5 +16,12 @@ TCPE.item.flint = {};
 //Iron
 TCPE.item.iron = {};
 
-TCPE.useItem = function(x,y,z,i,b,s,id,bd){
+TCPE.setItem = function(id,name,texture,textureData,maxStackSize){ModPE.setItem(id,texture,textureData,name,maxStackSize);}
+TCPE.useOn = function(x,y,z,i,b,s,id,bd){
 }
+TCPE.tick = function(){
+}
+
+//ModPE Hooks
+function useItem(x,y,z,i,b,s,id,bd){TCPE.useOn(x,y,z,i,b,s,id,bd);}
+function modTick(){TCPE.tick();}
