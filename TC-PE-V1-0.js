@@ -9,17 +9,17 @@ TCPE.tile = {};
 TCPE.texture.wood = {};
 TCPE.texture.wood.rod = "rod_wood";
 TCPE.texture.wood.chunk = "chunk_wood";
-TCPE.texture.wood.axehead = "axehead_wood";
-TCPE.texture.wood.pickaxehead = "pickaxehead_wood";
-TCPE.texture.wood.shovelhead = "shovelhead_wood";
+TCPE.texture.wood.axeHead = "axehead_wood";
+TCPE.texture.wood.pickaxeHead = "pickaxehead_wood";
+TCPE.texture.wood.shovelHead = "shovelhead_wood";
 
 //Wood
 TCPE.item.wood = {};
 TCPE.item.wood.rod = 500;
 TCPE.item.wood.chunk = 501;
-TCPE.item.wood.axehead = 502;
-TCPE.item.wood.pickaxehead = 503;
-TCPE.item.wood.shovelhead = 504;
+TCPE.item.wood.axeHead = 502;
+TCPE.item.wood.pickaxeHead = 503;
+TCPE.item.wood.shovelHead = 504;
 
 //Tiles
 TCPE.tile.searedBrick = 200;
@@ -45,9 +45,11 @@ TCPE.tick = function(){
 
 TCPE.setItem(TCPE.item.wood.rod,"Wooden Rod",TCPE.texture.wood.rod,0,64);
 TCPE.setItem(TCPE.item.wood.chunk,"Wooden Chunk",TCPE.texture.wood.chunk,0,64);
-TCPE.setItem(TCPE.item.wood.axehead,"Wooden Axe Head",TCPE.texture.wood.axehead,0,64);
-TCPE.setItem(TCPE.item.wood.pickaxehead,"Wooden Pickaxe Head",TCPE.texture.wood.pickaxehead,0,64);
-TCPE.setItem(TCPE.item.wood.shovelhead,"Wooden Shovel Head",TCPE.texture.wood.shovelhead,0,64);
+TCPE.setItem(TCPE.item.wood.axeHead,"Wooden Axe Head",TCPE.texture.wood.axeHead,0,64);
+TCPE.setItem(TCPE.item.wood.pickaxeHead,"Wooden Pickaxe Head",TCPE.texture.wood.pickaxeHead,0,64);
+TCPE.setItem(TCPE.item.wood.shovelHead,"Wooden Shovel Head",TCPE.texture.wood.shovelHead,0,64);
+
+TCPE.setTile(TCPE.tile.searedBrick,"Seared Brick",["searedbrick",0],1,0,0,0,0,2,1);
 
 //ModPE Hooks
 function useItem(x,y,z,i,b,s,id,bd){TCPE.useOn(x,y,z,i,b,s,id,bd);}
