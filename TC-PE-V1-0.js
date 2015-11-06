@@ -39,6 +39,10 @@ TCPE.tick = function(){
 }
 
 TCPE.setItem(TCPE.item.wood.rod,"Wooden Rod",TCPE.texture.wood.rod,0,64);
+TCPE.setItem(TCPE.item.wood.chunk,"Wooden Chunk",TCPE.texture.wood.chunk,0,64);
+TCPE.setItem(TCPE.item.wood.axehead,"Wooden Axe Head",TCPE.texture.wood.axehead,0,64);
+TCPE.setItem(TCPE.item.wood.pickaxehead,"Wooden Pickaxe Head",TCPE.texture.wood.pickaxehead,0,64);
+TCPE.setItem(TCPE.item.wood.shovelhead,"Wooden Shovel Head",TCPE.texture.wood.shovelhead,0,64);
 
 //ModPE Hooks
 function useItem(x,y,z,i,b,s,id,bd){TCPE.useOn(x,y,z,i,b,s,id,bd);}
