@@ -9,11 +9,19 @@ TCPE.tile = {};
 TCPE.texture.wood = {};
 TCPE.texture.wood.rod = "rod_wood";
 TCPE.texture.wood.chunk = "chunk_wood";
+TCPE.texture.wood.axehead = "axehead_wood";
+TCPE.texture.wood.pickaxehead = "pickaxehead_wood";
+TCPE.texture.wood.shovelhead = "shovelhead_wood";
 
 //Wood
 TCPE.item.wood = {};
 TCPE.item.wood.rod = 500;
 TCPE.item.wood.chunk = 501;
+TCPE.item.wood.axehead = 502;
+TCPE.item.wood.pickaxehead = 503;
+TCPE.item.wood.shovelhead = 504;
+
+
 
 //Stone
 TCPE.item.stone = {};
