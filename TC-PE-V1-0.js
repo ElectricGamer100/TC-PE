@@ -21,7 +21,10 @@ TCPE.item.wood.axehead = 502;
 TCPE.item.wood.pickaxehead = 503;
 TCPE.item.wood.shovelhead = 504;
 
-
+//Tiles
+TCPE.tile.searedBrick = 200;
+TCPE.tile.smelteryControllerOff = 201;
+TCPE.tile.smelteryControllerOn = 202;
 
 //Stone
 TCPE.item.stone = {};
@@ -33,6 +36,8 @@ TCPE.item.flint = {};
 TCPE.item.iron = {};
 
 TCPE.setItem = function(id,name,texture,textureData,maxStackSize){ModPE.setItem(id,texture,textureData,name,maxStackSize);}
+TCPE.setTile = function(id,name,texture,material,isOpaque,render,lightLevel,lightOpacity,destroyTime,explosionResistance){Block.defineBlock(id,name,texture,material,isOpaque,render);Block.setLightLevel(id,lightLevel);Block.setLightOpacity(lightOpacity);Block.setDestroyTime(id,destoryTime);Block.setExplosionResistance(id,explosionResistance);}
+
 TCPE.useOn = function(x,y,z,i,b,s,id,bd){
 }
 TCPE.tick = function(){
