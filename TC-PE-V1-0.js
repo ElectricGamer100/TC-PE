@@ -11,6 +11,17 @@ TCPE.texture = {};
 TCPE.item = {};
 TCPE.tile = {};
 
+TCPE.defaultDestroyTime = {};
+TCPE.defaultDestroyTime.stone = 1.5;
+TCPE.defaultDestroyTime.cobblestone = 1.75;
+TCPE.defaultDestroyTime.goldOre = 3.25;
+TCPE.defaultDestroyTime.ironOre = 3.25;
+TCPE.defaultDestroyTime.coalOre = 3.0;
+
+
+
+
+
 //Durability
 TCPE.durability.wood = 59;
 TCPE.durability.stone = 131;
@@ -152,6 +163,10 @@ TCPE.texture.wood.pickaxeHead = "pickaxehead_wood";
 TCPE.texture.wood.shovelHead = "shovelhead_wood";
 
 TCPE.item.wood.pickaxeFull = "pickaxe_wood";
+TCPE.item.wood.pickaxeBroken = "pickaxe_wood";
+
+TCPE.item.wood.axeFull = "axe_wood";
+TCPE.item.wood.axeBroken = "axe_wood";
 
 //Wood
 TCPE.item.wood = {};
@@ -162,6 +177,10 @@ TCPE.item.wood.pickaxeHead = 503;
 TCPE.item.wood.shovelHead = 504;
 
 TCPE.item.wood.pickaxeFull = 3500;
+TCPE.item.wood.pickaxeBroken = 3501;
+
+TCPE.item.wood.axeFull = 3550;
+TCPE.item.wood.axeBroken = 3551;
 
 //Tiles
 TCPE.tile.searedBrick = 200;
@@ -177,10 +196,13 @@ TCPE.item.flint = {};
 //Iron
 TCPE.item.iron = {};
 
+TCPE.setInventorySlot = function(s,i,a,d){net.zhuoweizhang.mcpelauncher.ScriptManager.nativeSetInventorySlot(s+9,i,a,d);};
 TCPE.setItem = function(id,name,texture,textureData,maxStackSize){ModPE.setItem(id,texture,textureData,name,maxStackSize);}
 TCPE.setTile = function(id,name,texture,material,isOpaque,render,lightLevel,lightOpacity,destroyTime,explosionResistance){Block.defineBlock(id,name,texture,material,isOpaque,render);Block.setLightLevel(id,lightLevel);Block.setLightOpacity(lightOpacity);Block.setDestroyTime(id,destroyTime);Block.setExplosionResistance(id,explosionResistance);}
 
 TCPE.useOn = function(x,y,z,i,b,s,id,bd){
+}
+TCPE.destroyBlock = function(x,y,z,s){
 }
 TCPE.tick = function(){
 }
@@ -194,6 +216,12 @@ TCPE.setItem(TCPE.item.wood.pickaxeHead,"Wooden Pickaxe Head",TCPE.texture.wood.
 TCPE.setItem(TCPE.item.wood.shovelHead,"Wooden Shovel Head",TCPE.texture.wood.shovelHead,0,64);
 
 TCPE.setItem(TCPE.item.wood.pickaxeFull,"Wooden Pickaxe",TCPE.texture.wood.pickaxeFull,0,1);
+Item.setMaxDamage(TCPE.item.wood.pickaxeFull,TCPE.durability.wood*TCPE.handleModifier.wood);
+TCPE.setItem(TCPE.item.wood.pickaxeBroken,"Wooden Pickaxe (Broken)",TCPE.texture.wood.pickaxeBroken,0,1);
+
+TCPE.setItem(TCPE.item.wood.axeFull,"Wooden Axe",TCPE.texture.wood.axeFull,0,1);
+Item.setMaxDamage(TCPE.item.wood.axeFull,TCPE.durability.wood*TCPE.handleModifier.wood);
+TCPE.setItem(TCPE.item.wood.axeBroken,"Wooden Axe (Broken)",TCPE.texture.wood.axeBroken,0,1);
 
 TCPE.setTile(TCPE.tile.searedBrick,"Seared Brick",["searedbrick",0],1,0,0,0,0,2,1);
 
@@ -201,3 +229,4 @@ TCPE.setTile(TCPE.tile.searedBrick,"Seared Brick",["searedbrick",0],1,0,0,0,0,2,
 function useItem(x,y,z,i,b,s,id,bd){TCPE.useOn(x,y,z,i,b,s,id,bd);}
 function modTick(){TCPE.tick();}
 function attackHook(a,v){TCPE.attackHook(a,v);}
+function destroyBlock(x,y,z,s){TCPE.destroyBlock(x,y,z,s);};
