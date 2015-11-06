@@ -1,9 +1,28 @@
 /*This mod has been ported by MCElectricGamer. There is another Tinkers Construct ported to MC:PE by MinecraftMuse*/
 
 var TCPE = {};
+TCPE.durability = {};
 TCPE.texture = {};
 TCPE.item = {};
 TCPE.tile = {};
+
+//Durability
+TCPE.durability.wood = 59;
+TCPE.durability.stone = 131;
+TCPE.durability.iron = 250;
+TCPE.durability.flint = 171;
+TCPE.durability.cactus = 150;
+TCPE.durability.bone = 200;
+TCPE.durability.obsidian = 89;
+TCPE.durability.alumite = 550;
+TCPE.durability.netherrack = 131;
+TCPE.durability.blueSlime = 1200;
+TCPE.durability.greenSlime = 500;
+TCPE.durability.paper = 30;
+TCPE.durability.cobalt = 800;
+TCPE.durability.ardite = 600;
+TCPE.durability.manyullyn = 1200;
+TCPE.durability.copper = 180;
 
 //Wood
 TCPE.texture.wood = {};
