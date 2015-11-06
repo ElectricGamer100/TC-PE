@@ -36,7 +36,7 @@ TCPE.item.flint = {};
 TCPE.item.iron = {};
 
 TCPE.setItem = function(id,name,texture,textureData,maxStackSize){ModPE.setItem(id,texture,textureData,name,maxStackSize);}
-TCPE.setTile = function(id,name,texture,material,isOpaque,render,lightLevel,lightOpacity,destroyTime,explosionResistance){Block.defineBlock(id,name,texture,material,isOpaque,render);Block.setLightLevel(id,lightLevel);Block.setLightOpacity(lightOpacity);Block.setDestroyTime(id,destoryTime);Block.setExplosionResistance(id,explosionResistance);}
+TCPE.setTile = function(id,name,texture,material,isOpaque,render,lightLevel,lightOpacity,destroyTime,explosionResistance){Block.defineBlock(id,name,texture,material,isOpaque,render);Block.setLightLevel(id,lightLevel);Block.setLightOpacity(lightOpacity);Block.setDestroyTime(id,destroyTime);Block.setExplosionResistance(id,explosionResistance);}
 
 TCPE.useOn = function(x,y,z,i,b,s,id,bd){
 }
