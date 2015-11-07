@@ -230,3 +230,4 @@ function useItem(x,y,z,i,b,s,id,bd){TCPE.useOn(x,y,z,i,b,s,id,bd);}
 function modTick(){TCPE.tick();}
 function attackHook(a,v){TCPE.attackHook(a,v);}
 function destroyBlock(x,y,z,s){TCPE.destroyBlock(x,y,z,s);};
+//custom functions used instead
