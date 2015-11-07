@@ -206,11 +206,11 @@ TCPE.item.wood.axeHead = 502;
 TCPE.item.wood.pickaxeHead = 503;
 TCPE.item.wood.shovelHead = 504;
 
-TCPE.item.wood.pickaxeFull = 3500;
-TCPE.item.wood.pickaxeBroken = 3501;
+TCPE.item.wood.pickaxeFull = 1500;
+TCPE.item.wood.pickaxeBroken = 1501;
 
-TCPE.item.wood.axeFull = 3550;
-TCPE.item.wood.axeBroken = 3551;
+TCPE.item.wood.axeFull = 1550;
+TCPE.item.wood.axeBroken = 1551;
 
 //Stone
 TCPE.item.stone = {};
@@ -220,19 +220,27 @@ TCPE.item.stone.axeHead = 602;
 TCPE.item.stone.pickaxeHead = 603;
 TCPE.item.stone.shovelHead = 604;
 
-TCPE.item.stone.pickaxeFull = 4000;
-TCPE.item.stone.pickaxeBroken = 4001;
+TCPE.item.stone.pickaxeFull = 2000;
+TCPE.item.stone.pickaxeBroken = 2001;
 
-TCPE.item.stone.axeFull = 3550;
-TCPE.item.stone.axeBroken = 3551;
+TCPE.item.stone.axeFull = 2550;
+TCPE.item.stone.axeBroken = 2551;
 
 //Wood Stone
 TCPE.item.woodStone = {};
-TCPE.item.stone.pickaxeFull = 4000;
-TCPE.item.stone.pickaxeBroken = 4001;
+TCPE.item.woodStone.pickaxeFull = 3000;
+TCPE.item.woodStone.pickaxeBroken = 3001;
 
-TCPE.item.stone.axeFull = 3550;
-TCPE.item.stone.axeBroken = 3551;
+TCPE.item.woodStone.axeFull = 3050;
+TCPE.item.woodStone.axeBroken = 3051;
+
+//Stone Wood
+TCPE.item.stoneWood = {};
+TCPE.item.stoneWood.pickaxeFull = 3500;
+TCPE.item.stoneWood.pickaxeBroken = 3501;
+
+TCPE.item.stoneWood.axeFull = 3550;
+TCPE.item.stoneWood.axeBroken = 3551;
 
 //Tiles
 TCPE.tile.searedBrick = 200;
